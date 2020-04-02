@@ -93,8 +93,7 @@ jobs:
         run: |   
            git clone  https://github.com/frainzy1477/luci-app-clash package/lean/luci-app-clash
            git clone  https://github.com/vernesong/OpenClash package/lean/OpenClash 
-           git clone  https://github.com/Leo-Jo-My/luci-theme-leo package/luci-theme-leo 
-           git clone  https://github.com/Leo-Jo/luci-app-koolproxyR package/luci-app-koolproxyR
+ 
           #          =========================================
           #         |                                         |
           #         |         此处可以任意添加源码              |
@@ -216,7 +215,7 @@ jobs:
           #  CONFIG_PACKAGE_luci-app-qos=y
              CONFIG_PACKAGE_luci-app-clash=y
           #  CONFIG_PACKAGE_luci-app-samba=y
-             CONFIG_PACKAGE_luci-app-koolproxyR=y
+          #  CONFIG_PACKAGE_luci-app-koolproxyR=y
           #  CONFIG_PACKAGE_luci-app-advanced-reboot=y
           #  CONFIG_PACKAGE_luci-app-amule=y
           #  CONFIG_PACKAGE_luci-app-adblock=y
@@ -245,7 +244,7 @@ jobs:
              CONFIG_PACKAGE_luci-theme-bootstrap=y
              CONFIG_PACKAGE_luci-theme-material=y
              CONFIG_PACKAGE_luci-theme-rosy=y
-             CONFIG_PACKAGE_luci-theme-leo=y 
+ 
            EOF
           # 常用软件包:
            cat >> .config <<EOF
